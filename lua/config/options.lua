@@ -50,6 +50,7 @@ vim.filetype.add({
   pattern = {
     ['.*/.husky/.*'] = 'bash',
     ['.*/.vscode/.*json'] = 'jsonc',
+    ['.*/.devcontainer/.*json'] = 'jsonc',
     -- -- Using an optional priority
     -- ['.*/etc/foo/.*%.conf'] = { 'dosini', { priority = 10 } },
     -- -- A pattern containing an environment variable
