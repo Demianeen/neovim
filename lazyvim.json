@@ -2,6 +2,7 @@
   "extras": [
     "extras.my.coding.cmp",
     "extras.my.coding.dial",
+    "extras.my.coding.hardtime",
     "extras.my.coding.lab",
     "extras.my.coding.luasnip",
     "extras.my.coding.mini.mini-ai",
@@ -29,6 +30,7 @@
     "extras.my.editor.silicon",
     "extras.my.editor.telescope.telescope",
     "extras.my.editor.telescope.undo",
+    "extras.my.editor.telescope.zoxide",
     "extras.my.editor.toggleterm.keys.open_file_under_the_cursor",
     "extras.my.editor.toggleterm.keys.terminate_terminal",
     "extras.my.editor.toggleterm.keys.windows_control",
@@ -65,7 +67,6 @@
     "extras.my.lang.sql.linting",
     "extras.my.lang.sql.lsp",
     "extras.my.lang.toml.taplo",
-    "extras.my.lang.typescript.nvim-dap-react-native",
     "extras.my.lang.typescript.nvim-dap-vscode-js",
     "extras.my.lsp.garbage-day",
     "extras.my.lsp.lsp-config",
@@ -78,6 +79,7 @@
     "extras.my.ui.catppuccin",
     "extras.my.ui.disable-bufferline",
     "extras.my.ui.edgy",
+    "extras.my.ui.eyeliner",
     "extras.my.ui.neo-tree",
     "extras.my.ui.notifications",
     "extras.my.ui.octo",
@@ -88,6 +90,8 @@
     "extras.my.ui.treesitter",
     "extras.my.ui.trouble",
     "extras.my.ui.twilight",
+    "extras.my.ui.which-key",
+    "lazyvim.plugins.extras.coding.codeium",
     "lazyvim.plugins.extras.coding.luasnip",
     "lazyvim.plugins.extras.coding.mini-comment",
     "lazyvim.plugins.extras.coding.mini-surround",
@@ -119,7 +123,7 @@
   ],
   "news": {
     "NEWS.md": "6520",
-    "doc/news.txt": "24447"
+    "doc/news.txt": "24450"
   },
   "version": 6
 }
