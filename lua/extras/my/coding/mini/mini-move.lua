@@ -1,19 +1,6 @@
 return {
   'echasnovski/mini.move',
   keys = {
-    -- to override lazyvim keymaps
-    {
-      'H',
-      function()
-        require('mini.move').move_line('left')
-      end,
-    },
-    {
-      'L',
-      function()
-        require('mini.move').move_line('right')
-      end,
-    },
     {
       'H',
       mode = 'x',
