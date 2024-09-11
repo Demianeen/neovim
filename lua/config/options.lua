@@ -5,7 +5,7 @@ local options = {
   tabstop = 2, -- Number of spaces that a <Tab> in the file counts for
   smartindent = true, -- Tries to guess and adds intend when start a new line
   autoindent = true, -- Remembers indent from previous lines
-  expandtab = false,
+  expandtab = true,
 
   wrap = true,
   -- wrapmargin = 80,
