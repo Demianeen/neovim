@@ -16,6 +16,14 @@ return {
 
     LazyVim.toggle.map('<leader>uH', toggle)
 
-    return {}
+    return {
+      disabled_keys = {
+        -- disable arrow keys in every mode except 'insert'
+        ['<Up>'] = { '' },
+        ['<Down>'] = { '' },
+        ['<Left>'] = { '' },
+        ['<Right>'] = { '' },
+      },
+    }
   end,
 }
