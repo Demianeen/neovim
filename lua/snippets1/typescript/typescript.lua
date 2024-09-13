@@ -30,7 +30,7 @@ interface {} {{
 )
 
 local importFrom = ls.snippet(
-  'im',
+  'imf',
   fmt("import {{{}}} from '{}'", {
     ls.insert_node(2),
     ls.insert_node(1),
@@ -38,7 +38,7 @@ local importFrom = ls.snippet(
 )
 
 local exportFrom = ls.snippet(
-  'ex',
+  'exf',
   fmt("export {{{}}} from '{}'", {
     ls.insert_node(2),
     ls.insert_node(1),
