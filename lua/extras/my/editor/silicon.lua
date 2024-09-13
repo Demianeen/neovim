@@ -1,20 +1,20 @@
 return {
-  'krivahtoo/silicon.nvim',
-  build = './install.sh build',
+  'michaelrommel/nvim-silicon',
   keys = {
     {
       '<leader>cy',
-      ':Silicon<CR>',
+      function()
+        require('nvim-silicon').clip()
+      end,
       desc = 'Screen code',
       mode = { 'n', 'v' },
       silent = true,
     },
   },
   opts = {
-    output = {
-      clipboard = true,
-    },
-    line_number = true,
     background = '#e79572',
   },
+  config = function(_, opts)
+    require('nvim-silicon').setup(opts)
+  end,
 }
