@@ -29,11 +29,11 @@ return {
   dependencies = { 'nvim-treesitter/nvim-treesitter' },
   keys = {
     {
-      '<leader>cC',
+      '<leader>cN',
       function()
         require('neogen').generate({})
       end,
-      desc = 'Text object comment',
+      desc = 'Add note comment',
     },
   },
   opts = {
