@@ -13,6 +13,7 @@ return {
   },
   opts = {
     background = '#e79572',
+    gobble = true, -- whether to strip of superfluous leading whitespace
   },
   config = function(_, opts)
     require('nvim-silicon').setup(opts)
