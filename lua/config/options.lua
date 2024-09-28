@@ -1,4 +1,5 @@
 vim.g.mapleader = ' '
+vim.g.sqlite_clib_path = os.getenv('SQLITE_LIB_PATH')
 
 local options = {
   -- tabs
