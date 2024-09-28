@@ -16,12 +16,48 @@ return {
           require('duck').hatch()
           require('duck').hatch()
           require('duck').hatch()
-          require('duck').hatch()
+          require('duck').hatch('🦆', 10)
         end,
         desc = 'Hatch ducks',
       },
       {
         '<leader>uGdc',
+        function()
+          require('duck').hatch('🐈')
+        end,
+        desc = 'Catch a cat',
+      },
+      {
+        '<leader>uGdC',
+        function()
+          require('duck').hatch('🐈')
+          require('duck').hatch('🐈')
+          require('duck').hatch('🐈')
+          require('duck').hatch('🐈')
+          require('duck').hatch('🐈', 0.75)
+        end,
+        desc = 'Catch more cats',
+      },
+      {
+        '<leader>uGdr',
+        function()
+          require('duck').hatch('🦀')
+        end,
+        desc = 'Get some rust',
+      },
+      {
+        '<leader>uGdR',
+        function()
+          require('duck').hatch('🦀')
+          require('duck').hatch('🦀')
+          require('duck').hatch('🦀')
+          require('duck').hatch('🦀')
+          require('duck').hatch('🦀', 12)
+        end,
+        desc = 'Unleash Rustaceans',
+      },
+      {
+        '<leader>uGdk',
         function()
           require('duck').cook()
         end,
