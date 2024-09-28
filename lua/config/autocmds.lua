@@ -22,3 +22,39 @@ vim.api.nvim_create_autocmd('FileType', {
 })
 
 vim.api.nvim_del_augroup_by_name('lazyvim_json_conceal')
+
+-- custom tabpage naming
+local function getCurrentCwdDirName()
+  local cwd = vim.uv.cwd()
+  if cwd == nil then
+    vim.notify('Cwd is nil!', vim.log.levels.ERROR, nil)
+    return 'error'
+  end
+  return cwd:match('([^/\\]+)$')
+end
+vim.cmd('BufferLineTabRename ' .. getCurrentCwdDirName())
+vim.api.nvim_create_autocmd('TabNewEntered', {
+  callback = function()
+    -- Schedule the renaming after the tab is fully entered
+    vim.schedule(function()
+      vim.cmd('BufferLineTabRename ' .. getCurrentCwdDirName())
+    end)
+  end,
+})
+
+-- Function to rename all tab pages
+local function renameAllTabs()
+  local current_tab = vim.fn.tabpagenr()
+  for tabnr = 1, vim.fn.tabpagenr('$') do
+    vim.cmd(tabnr .. 'tabnext') -- Switch to the tab with the number `tabnr`
+    vim.cmd('BufferLineTabRename ' .. getCurrentCwdDirName()) -- Rename the tab
+    vim.cmd(current_tab .. 'tabnext')
+  end
+end
+-- Autocmd to rename all tabs after loading a session
+vim.api.nvim_create_autocmd('User', {
+  pattern = 'PersistenceLoadPost',
+  callback = function()
+    vim.schedule(renameAllTabs) -- Schedule the renaming after the session is loaded
+  end,
+})
