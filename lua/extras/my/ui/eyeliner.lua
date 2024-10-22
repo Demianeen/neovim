@@ -1,3 +1,4 @@
+-- nice plugin but messes with flash.nvim ; and , keymaps
 return {
   'jinh0/eyeliner.nvim',
   opts = {
