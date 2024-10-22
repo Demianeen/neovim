@@ -9,6 +9,7 @@ return {
       virtual_symbol_suffix = '',
       enable_short_hex = false,
       enable_named_colors = false,
+      enable_hsl = true,
       enable_tailwind = true,
     },
   },
