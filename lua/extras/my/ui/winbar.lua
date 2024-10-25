@@ -18,6 +18,7 @@ local disabled_filetypes = {
   'qf',
   'grug-far',
   'trouble',
+  'rest_nvim_result',
 }
 
 return {

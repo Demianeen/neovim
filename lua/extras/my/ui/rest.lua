@@ -11,6 +11,7 @@ return {
     ft = 'http',
     dependencies = {
       'vhyrro/luarocks.nvim',
+      'j-hui/fidget.nvim',
     },
     keys = {
       {
