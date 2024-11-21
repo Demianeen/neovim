@@ -84,6 +84,7 @@
     "extras.my.ui.octo",
     "extras.my.ui.panels.quickfix",
     "extras.my.ui.rest",
+    "extras.my.ui.dashboard",
     "extras.my.ui.symbol_usage",
     "extras.my.ui.tabs.bufferline",
     "extras.my.ui.tabs.scope",
@@ -123,8 +124,9 @@
     "lazyvim.plugins.extras.util.project"
   ],
   "news": {
-    "NEWS.md": "7107",
+    "NEWS.md": "7429",
     "doc/news.txt": "24450"
   },
   "version": 7
 }
+
