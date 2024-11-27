@@ -21,15 +21,10 @@ return {
     'folke/which-key.nvim',
     opts = function(_, _)
       local wk = require('which-key')
-      local keyDesc = {
-        P = 'Parameter',
-        C = 'Comment',
-      }
-      wk.register({
-        mode = { 'o', 'x' },
-        a = keyDesc,
-        i = keyDesc,
-      })
+      wk.add(
+        { 'iC', desc = 'Comment', mode = { 'o', 'o', 'x', 'x' } },
+        { 'iP', desc = 'Parameter', mode = { 'o', 'o', 'x', 'x' } }
+      )
     end,
   },
 }
