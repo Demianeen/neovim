@@ -68,3 +68,4 @@ postgres
 env
 auth
 mui
+SSO
