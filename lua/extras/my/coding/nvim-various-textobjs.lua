@@ -9,7 +9,9 @@ return {
     },
   },
   opts = {
-    useDefaultKeymaps = true,
-    disabledKeymaps = { 'L' },
+    keymaps = {
+      useDefaults = true,
+      disabledDefaults = { 'L' },
+    },
   },
 }
