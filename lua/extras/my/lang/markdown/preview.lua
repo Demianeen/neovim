@@ -6,7 +6,7 @@ return {
   end,
   keys = {
     {
-      '<leader>nP',
+      '<leader>NP',
       ft = 'markdown',
       '<cmd>MarkdownPreviewToggle<cr>',
       desc = 'Markdown Preview',

@@ -1,7 +1,7 @@
 return {
   'dfendr/clipboard-image.nvim',
   keys = {
-    { '<leader>np', ':PasteImg<CR>', desc = 'Paste Image' },
+    { '<leader>Np', ':PasteImg<CR>', desc = 'Paste Image' },
   },
   opts = {
     markdown = {

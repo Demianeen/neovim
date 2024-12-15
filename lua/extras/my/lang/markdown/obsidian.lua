@@ -7,7 +7,7 @@ vim.api.nvim_create_autocmd('BufEnter', {
     vim.api.nvim_buf_set_keymap(
       0,
       'n',
-      '<leader>np',
+      '<leader>Np',
       ':ObsidianPasteImg<CR>',
       opts('Paste Image')
     )
@@ -21,34 +21,34 @@ return {
     keys = {
       -- search
       {
-        '<leader>ns',
+        '<leader>Ns',
         '<cmd>ObsidianQuickSwitch<cr>',
         desc = 'Search',
       },
       {
-        '<leader>ng',
+        '<leader>Ng',
         '<cmd>ObsidianQuickSearch<cr>',
         desc = 'Grep',
       },
       -- daily note
       {
-        '<leader>ndt',
+        '<leader>Ndt',
         '<cmd>ObsidianToday<cr>',
         desc = 'Today',
       },
       {
-        '<leader>ndy',
+        '<leader>Ndy',
         '<cmd>ObsidianYesterdat<cr>',
         desc = 'Yesterday',
       },
       {
-        '<leader>ndT',
+        '<leader>NdT',
         '<cmd>ObsidianTomorrow<cr>',
         desc = 'Tomorrow',
       },
       -- links
       {
-        '<leader>nl',
+        '<leader>Nl',
         ft = 'markdown',
         '<cmd>ObsidianLink<cr>',
         desc = 'Link',
@@ -100,7 +100,7 @@ return {
           },
         },
         -- Toggle check-boxes.
-        ['<leader>nc'] = {
+        ['<leader>Nc'] = {
           action = function()
             return require('obsidian').util.toggle_checkbox()
           end,
@@ -174,7 +174,7 @@ return {
     opts = function(_, _)
       local wk = require('which-key')
       wk.add({
-        '<leader>nd',
+        '<leader>Nd',
         group = 'Daily note',
       })
     end,
