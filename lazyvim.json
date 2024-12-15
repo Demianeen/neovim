@@ -27,7 +27,6 @@
     "extras.my.editor.oil",
     "extras.my.editor.project",
     "extras.my.editor.silicon",
-    "extras.my.editor.telescope.smart_open",
     "extras.my.editor.telescope.telescope",
     "extras.my.editor.telescope.undo",
     "extras.my.editor.telescope.zoxide",
@@ -75,7 +74,6 @@
     "extras.my.op",
     "extras.my.testing",
     "extras.my.ui.catppuccin",
-    "extras.my.ui.dashboard",
     "extras.my.ui.edgy",
     "extras.my.ui.game.cellular-automaton",
     "extras.my.ui.game.duck",
@@ -122,7 +120,8 @@
     "lazyvim.plugins.extras.ui.edgy",
     "lazyvim.plugins.extras.ui.treesitter-context",
     "lazyvim.plugins.extras.util.dot",
-    "lazyvim.plugins.extras.util.project"
+    "lazyvim.plugins.extras.util.project",
+    "extras.my.editor.telescope.smart_open"
   ],
   "news": {
     "NEWS.md": "10960",

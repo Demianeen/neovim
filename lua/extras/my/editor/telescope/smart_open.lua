@@ -22,6 +22,27 @@ return {
       { '<leader><space>', false },
     },
   },
+  -- replace old snacks find files with smart_open
+  {
+    'folke/snacks.nvim',
+    opts = function(_, opts)
+      for i = #opts.dashboard.preset.keys, 1, -1 do
+        if opts.dashboard.preset.keys[i].key == 'f' then
+          table.remove(opts.dashboard.preset.keys, i)
+        end
+      end
+
+      table.insert(opts.dashboard.preset.keys, 1, {
+        icon = ' ',
+        key = 'f',
+        desc = 'Find File',
+        action = ':' .. Smart_open_command,
+      })
+
+      return opts
+    end,
+  },
+  -- configure smart_open
   {
     'nvim-telescope/telescope.nvim',
     lazy = false,
@@ -47,28 +68,4 @@ return {
       },
     },
   },
-  -- {
-  --   'nvimdev/dashboard-nvim',
-  --   optional = true,
-  --   opts = function(_, opts)
-  --     local projects = {
-  --       action = Smart_open_command,
-  --       desc = '  Find files',
-  --       icon = '',
-  --       key = 'f',
-  --     }
-  --
-  --     projects.desc = projects.desc .. string.rep(' ', 43 - #projects.desc)
-  --     projects.key_format = '  %s'
-  --
-  --     -- remove lazyvim config property
-  --     for i = #opts.config.center, 1, -1 do
-  --       if opts.config.center[i].key == 'f' then
-  --         table.remove(opts.config.center, i)
-  --       end
-  --     end
-  --
-  --     table.insert(opts.config.center, 1, projects)
-  --   end,
-  -- },
 }
