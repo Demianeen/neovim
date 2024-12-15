@@ -92,6 +92,7 @@
     "extras.my.ui.trouble",
     "extras.my.ui.twilight",
     "extras.my.ui.winbar",
+    "lazyvim.plugins.extras.ai.supermaven",
     "lazyvim.plugins.extras.coding.luasnip",
     "lazyvim.plugins.extras.coding.mini-comment",
     "lazyvim.plugins.extras.coding.mini-surround",
@@ -124,7 +125,7 @@
     "lazyvim.plugins.extras.util.project"
   ],
   "news": {
-    "NEWS.md": "7429",
+    "NEWS.md": "10960",
     "doc/news.txt": "24450"
   },
   "version": 7

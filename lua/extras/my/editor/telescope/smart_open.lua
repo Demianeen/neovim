@@ -17,7 +17,14 @@ return {
     end,
   },
   {
+    'ibhagwan/fzf-lua',
+    keys = {
+      { '<leader><space>', false },
+    },
+  },
+  {
     'nvim-telescope/telescope.nvim',
+    lazy = false,
     opts = {
       extensions = {
         smart_open = {
