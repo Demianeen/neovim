@@ -1,7 +1,5 @@
 {
   "extras": [
-    "extras.my.coding.cmp.lspkind",
-    "extras.my.coding.cmp.pretty-doc-border",
     "extras.my.coding.dial",
     "extras.my.coding.hardtime",
     "extras.my.coding.lab",
@@ -27,6 +25,7 @@
     "extras.my.editor.oil",
     "extras.my.editor.project",
     "extras.my.editor.silicon",
+    "extras.my.editor.telescope.smart_open",
     "extras.my.editor.telescope.telescope",
     "extras.my.editor.telescope.undo",
     "extras.my.editor.telescope.zoxide",
@@ -120,8 +119,7 @@
     "lazyvim.plugins.extras.ui.edgy",
     "lazyvim.plugins.extras.ui.treesitter-context",
     "lazyvim.plugins.extras.util.dot",
-    "lazyvim.plugins.extras.util.project",
-    "extras.my.editor.telescope.smart_open"
+    "lazyvim.plugins.extras.util.project"
   ],
   "news": {
     "NEWS.md": "10960",
