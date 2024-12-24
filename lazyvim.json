@@ -12,7 +12,6 @@
     "extras.my.coding.treesj",
     "extras.my.editor.devcontainer",
     "extras.my.editor.flash",
-    "extras.my.editor.flatten",
     "extras.my.editor.git.git-conflict",
     "extras.my.editor.git.git-dev",
     "extras.my.editor.git.gitlinker",
@@ -30,10 +29,6 @@
     "extras.my.editor.telescope.undo",
     "extras.my.editor.telescope.zoxide",
     "extras.my.editor.thanks",
-    "extras.my.editor.toggleterm.keys.open_file_under_the_cursor",
-    "extras.my.editor.toggleterm.keys.terminate_terminal",
-    "extras.my.editor.toggleterm.keys.windows_control",
-    "extras.my.editor.toggleterm.toggleterm",
     "extras.my.editor.undotree",
     "extras.my.editor.wakatime",
     "extras.my.editor.wtf",
@@ -59,6 +54,7 @@
     "extras.my.lang.markdown.obsidian",
     "extras.my.lang.markdown.preview",
     "extras.my.lang.markdown.wrapping",
+    "extras.my.lang.shell.lsp",
     "extras.my.lang.sql.dadbod",
     "extras.my.lang.sql.linting",
     "extras.my.lang.sql.lsp",
@@ -127,3 +123,4 @@
   },
   "version": 7
 }
+
