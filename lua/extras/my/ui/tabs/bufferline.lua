@@ -2,6 +2,7 @@ return {
   'akinsho/bufferline.nvim',
   opts = {
     options = {
+      always_show_bufferline = true,
       truncate_names = false,
       tab_size = 16,
       indicator = { icon = '▎', style = 'icon' },
