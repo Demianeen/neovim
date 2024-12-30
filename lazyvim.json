@@ -17,7 +17,6 @@
     "extras.my.editor.git.gitlinker",
     "extras.my.editor.git.sibling-swap",
     "extras.my.editor.gitsigns",
-    "extras.my.editor.harpoon",
     "extras.my.editor.i18n",
     "extras.my.editor.navbuddy",
     "extras.my.editor.navigation-treesiter",
@@ -123,4 +122,3 @@
   },
   "version": 7
 }
-
