@@ -75,3 +75,6 @@ GCP
 AWS
 SVG
 svg
+stderr
+stdout
+webpack
