@@ -277,16 +277,7 @@ return {
         additional_vim_regex_highlighting = false,
       },
       highlight_overrides = {
-        all = function(c)
-          return {
-            BufferLineCustomGroupLabel = {
-              bg = c.mantle,
-              fg = c.text,
-              style = { 'bold' },
-            },
-            BufferLineCustomGroupSep = { bg = c.mantle, fg = c.maroon },
-          }
-        end,
+        all = override_all,
       },
       integrations = {
         telescope = {
