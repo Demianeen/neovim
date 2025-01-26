@@ -1,5 +1,4 @@
 vim.g.mapleader = ' '
-vim.g.sqlite_clib_path = os.getenv('SQLITE_LIB_PATH')
 vim.g.lazyvim_python_lsp = 'basedpyright'
 
 local options = {
