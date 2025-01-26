@@ -22,14 +22,12 @@ return {
       opts = function(_, _)
         local wk = require('which-key')
         wk.add({
-          { '<leader>L', group = 'Lab' },
-          { '<leader>l', group = 'Lsp' },
+          { '<leader>cL', group = 'Lab' },
         })
       end,
     },
   },
   keys = {
-    { '<leader>cl', false },
     { '<leader>cLs', ':Lab code stop<CR>', desc = 'Stop', silent = true },
     { '<leader>cLr', ':Lab code run<CR>', desc = 'Run', silent = true },
     { '<leader>cLp', ':Lab code panel<CR>', desc = 'Panel', silent = true },
