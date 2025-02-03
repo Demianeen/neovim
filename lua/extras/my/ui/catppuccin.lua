@@ -62,12 +62,6 @@ return {
           }
         end,
       },
-      integrations = {
-        telescope = {
-          enabled = true,
-          style = 'nvchad',
-        },
-      },
     },
   },
 
