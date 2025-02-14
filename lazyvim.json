@@ -51,6 +51,7 @@
     "extras.my.lang.sql.lsp",
     "extras.my.lang.toml.taplo",
     "extras.my.lang.typescript.nvim-dap-vscode-js",
+    "extras.my.lang.typescript.vitest-testing",
     "extras.my.lsp.garbage-day",
     "extras.my.lsp.lsp-config",
     "extras.my.lsp.lsp-debug-tools",
