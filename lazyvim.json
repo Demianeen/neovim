@@ -1,5 +1,6 @@
 {
   "extras": [
+    "extras.my.coding.blink",
     "extras.my.coding.hardtime",
     "extras.my.coding.lab",
     "extras.my.coding.luasnip",
