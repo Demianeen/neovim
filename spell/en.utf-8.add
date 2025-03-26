@@ -86,3 +86,5 @@ intl
 subshell
 snackbar
 middlewares
+Zod
+jwt
