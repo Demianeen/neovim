@@ -19,6 +19,7 @@
     "extras.my.editor.i18n",
     "extras.my.editor.picker.smart",
     "extras.my.editor.picker.undo",
+    "extras.my.editor.picker.zoxide",
     "extras.my.editor.silicon",
     "extras.my.editor.thanks",
     "extras.my.editor.undotree",
@@ -46,7 +47,6 @@
     "extras.my.lang.markdown.preview",
     "extras.my.lang.markdown.wrapping",
     "extras.my.lang.shell.lsp",
-    "extras.my.lang.sql.dadbod",
     "extras.my.lang.sql.linting",
     "extras.my.lang.sql.lsp",
     "extras.my.lang.toml.taplo",
@@ -67,7 +67,6 @@
     "extras.my.ui.highlight-colors",
     "extras.my.ui.neo-tree",
     "extras.my.ui.notifications",
-    "extras.my.ui.octo",
     "extras.my.ui.rest",
     "extras.my.ui.symbol_usage",
     "extras.my.ui.tabs.bufferline",
@@ -98,7 +97,6 @@
     "lazyvim.plugins.extras.lang.markdown",
     "lazyvim.plugins.extras.lang.nix",
     "lazyvim.plugins.extras.lang.python",
-    "lazyvim.plugins.extras.lang.sql",
     "lazyvim.plugins.extras.lang.toml",
     "lazyvim.plugins.extras.lang.typescript",
     "lazyvim.plugins.extras.lang.yaml",
@@ -107,13 +105,12 @@
     "lazyvim.plugins.extras.test.core",
     "lazyvim.plugins.extras.ui.edgy",
     "lazyvim.plugins.extras.util.dot",
-    "lazyvim.plugins.extras.util.project",
-    "lazyvim.plugins.extras.util.rest"
+    "lazyvim.plugins.extras.util.octo",
+    "lazyvim.plugins.extras.util.project"
   ],
   "news": {
     "NEWS.md": "10960",
-    "doc/news.txt": "24450"
+    "doc/news.txt": "24170"
   },
-  "version": 7
+  "version": 8
 }
-
