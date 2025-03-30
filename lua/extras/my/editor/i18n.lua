@@ -29,6 +29,9 @@ return {
       virt_text = {
         conceal_key = true,
       },
+      diagnostic = {
+        enabled = false,
+      },
     }
   end,
 }
