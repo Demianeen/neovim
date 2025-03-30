@@ -7,7 +7,15 @@ return {
   {
     'rest-nvim/rest.nvim',
     main = 'rest-nvim',
-    opts = {},
+    opts = {
+      ui = {
+        winbar = true,
+        keybinds = {
+          prev = 'P',
+          next = 'N',
+        },
+      },
+    },
     ft = 'http',
     dependencies = {
       'vhyrro/luarocks.nvim',
@@ -27,23 +35,12 @@ return {
         desc = 'Re-run latest request',
       },
       {
-        'H',
-        ':Rest result prev<CR>',
-        ft = 'http',
-        desc = 'Cycle panes backwards',
-      },
-      {
-        'L',
-        ':Rest result next<CR>',
-        ft = 'http',
-        desc = 'Cycle panes forward',
-      },
-      {
         '<leader>rr',
         '<cmd>Rest run<cr>',
         'Run request under the cursor',
       },
       { '<leader>rl', '<cmd>Rest run last<cr>', 'Re-run latest request' },
+      { '<leader>rL', '<cmd>Rest logs<cr>', 'Logs' },
     },
   },
   {
@@ -54,6 +51,14 @@ return {
       if type(opts.ensure_installed) == 'table' then
         vim.list_extend(opts.ensure_installed, { 'http' })
       end
+    end,
+  },
+  {
+    'folke/edgy.nvim',
+    opts = function(_, opts)
+      vim.list_extend(opts.right, {
+        { ft = 'rest_nvim_result', title = 'Rest Results', width = 1.2 },
+      })
     end,
   },
 }
