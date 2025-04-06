@@ -60,7 +60,7 @@
     "extras.my.lsp.symbol-sage",
     "extras.my.op",
     "extras.my.testing",
-    "extras.my.ui.catppuccin",
+    "extras.my.ui.colorsheme",
     "extras.my.ui.edgy",
     "extras.my.ui.game.cellular-automaton",
     "extras.my.ui.game.duck",
@@ -114,3 +114,4 @@
   },
   "version": 8
 }
+

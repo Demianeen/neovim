@@ -90,4 +90,12 @@ return {
       })
     end,
   },
+
+  {
+    'LazyVim/LazyVim',
+    dependecies = { 'catppuccin/nvim' },
+    opts = {
+      colorscheme = 'catppuccin-frappe',
+    },
+  },
 }
