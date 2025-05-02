@@ -16,6 +16,7 @@ return {
         max_tokens = 8192,
         hints = { enabled = false },
       },
+      hints = { enabled = false },
       vendors = {
         groq = { -- define groq provider
           __inherited_from = 'openai',
