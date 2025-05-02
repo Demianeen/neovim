@@ -8,14 +8,8 @@ return {
     },
     opts = {
       ---@alias AvanteProvider "claude" | "openai" | "azure" | "gemini" | "cohere" | "copilot" | string
-      provider = 'copilot',
+      provider = 'claude-3.7',
       cursor_applying_provider = 'groq',
-      copilot = {
-        model = 'claude-3.7-sonnet',
-        temperature = 0,
-        max_tokens = 8192,
-        hints = { enabled = false },
-      },
       hints = { enabled = false },
       vendors = {
         groq = { -- define groq provider
@@ -24,6 +18,42 @@ return {
           endpoint = 'https://api.groq.com/openai/v1/',
           model = 'llama-3.3-70b-versatile',
           max_tokens = 32768,
+        },
+        ['deepseek-coder'] = {
+          __inherited_from = 'openai',
+          api_key_name = 'DEEPSEEK_API_KEY',
+          endpoint = 'https://api.deepseek.com',
+          model = 'deepseek-coder',
+          temperature = 0,
+        },
+        ['deepseek-reasoner'] = {
+          __inherited_from = 'openai',
+          api_key_name = 'DEEPSEEK_API_KEY',
+          endpoint = 'https://api.deepseek.com',
+          temperature = 0,
+          model = 'deepseek-reasoner',
+          disable_tools = true,
+        },
+        ['deepseek-chat'] = {
+          __inherited_from = 'openai',
+          api_key_name = 'DEEPSEEK_API_KEY',
+          endpoint = 'https://api.deepseek.com',
+          model = 'deepseek-chat',
+        },
+        ['claude-3.7'] = {
+          __inherited_from = 'copilot',
+          display_name = 'copilot/claude-3.7',
+          model = 'claude-3.7-sonnet',
+        },
+        ['claude-3.5'] = {
+          __inherited_from = 'copilot',
+          display_name = 'copilot/claude-3.5',
+          model = 'claude-3.5-sonnet',
+        },
+        ['gpt-o3-mini'] = {
+          __inherited_from = 'copilot',
+          display_name = 'copilot/gpt-o3-mini',
+          model = 'gpt-o3-mini',
         },
       },
 
